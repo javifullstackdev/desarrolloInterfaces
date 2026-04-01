@@ -1,13 +1,210 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>taskflow-landing</title>
-  </head>
-  <body>
-    <h1 class="text-6xl font-black text-blue-600">TaskFlow</h1>
-    <script type="module" src="/main.js"></script>
-  </body>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaskFlow</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="px-6 py-4">
+    <div class="mx-auto flex max-w-[1280px] items-center justify-between">
+      <div class="text-xl font-bold">TaskFlow</div>
+      <nav class="flex items-center gap-6">
+        <a href="#">Funciones</a>
+        <a href="#">Precios</a>
+        <a href="#">Testimonios</a>
+        <button class="rounded-3xl bg-black px-4 py-2 text-sm text-white">Empezar gratis</button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="flex flex-col items-center justify-center px-6 py-24 text-center">
+    <span class="mb-4 rounded-full px-3 py-1 text-sm font-medium">
+      La herramienta #1 en productividad
+    </span>
+    <h1 class="mb-6 max-w-3xl text-5xl font-extrabold tracking-tight md:text-6xl">
+      Organiza tu equipo. Potencia tus proyectos.
+    </h1>
+    <p class="mb-10 max-w-2xl text-lg">
+      Gestiona tus tareas de manera eficiente y colabora con tu equipo en tiempo real.
+    </p>
+    <div class="flex items-center gap-4"> 
+      <button id="primario" class="rounded-3xl border px-6 py-3 font-semibold">Empezar gratis &rarr;</button>
+      <button id="secundario" class="rounded-3xl border px-6 py-3 font-semibold">Ver demo</button>
+    </div>
+  </section>
+
+  <section class="px-6 py-20">
+
+    <div class="mx-auto max-w-[1280px]">
+
+      <div class="mb-16 text-center">
+        <h2 class="text-3xl font-bold">Funcionalidades</h2>
+        <p>Todo lo que necesitas en un solo lugar</p>
+      </div>
+
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-3"> 
+        <div class="p-6 border rounded-xl">
+          <span class="mb-4 block text-2xl">⭐</span>
+          <h3 class="mb-2 font-bold">Tableros Kanban</h3>
+          <p>Párrafo descriptivo sobre la funcionalidad.</p>
+        </div>
+
+        <div class="p-6 border rounded-xl">
+          <span class="mb-4 block text-2xl">⭐</span>
+          <h3 class="mb-2 font-bold">Time Tracking</h3>
+          <p>Párrafo descriptivo sobre la funcionalidad.</p>
+        </div>
+
+        <div class="p-6 border rounded-xl">
+          <span class="mb-4 block text-2xl">⭐</span>
+          <h3 class="mb-2 font-bold">Chat integrado</h3>
+          <p>Párrafo descriptivo sobre la funcionalidad.</p>
+        </div>
+
+        <div class="p-6 border rounded-xl">
+          <span class="mb-4 block text-2xl">⭐</span>
+          <h3 class="mb-2 font-bold">Informes y métricas</h3>
+          <p>Párrafo descriptivo sobre la funcionalidad.</p>
+        </div>
+
+        <div class="p-6 border rounded-xl">
+          <span class="mb-4 block text-2xl">⭐</span>
+          <h3 class="mb-2 font-bold">Integraciones</h3>
+          <p>Párrafo descriptivo sobre la funcionalidad.</p>
+        </div>
+
+        <div class="p-6 border rounded-xl">
+          <span class="mb-4 block text-2xl">⭐</span>
+          <h3 class="mb-2 font-bold">Seguridad avanzada</h3>
+          <p>Párrafo descriptivo sobre la funcionalidad.</p>
+        </div>
+
+    </div>
+  
+  </section>
+
+  <section class="px-6 py-24">
+    <div class="mx-auto max-w-[1280px]">
+      <div class="mb-16 text-center">
+        <h2 class="text-3xl font-bold">Planes</h2>
+        <p>Precios transparentes</p>
+      </div>
+      <div class="grid grid-cols-1 items-center gap-8 md:grid-cols-3">
+        <div class="rounded-2xl p-8 border"> 
+          <h3 class="font-bold text-xl">Starter</h3>
+          <p>Para empezar</p>
+          <p>0€/mes</p>
+          <ul class="my-6 space-y-3 text-sm">
+            <li>• 3 proyectos</li>
+            <li>• 10 tareas por proyecto</li>
+            <li>• 1 GB almacenamiento</li>
+          </ul>
+          <button class="w-full rounded-lg border py-2">Seleccionar plan</button>
+        </div>
+        <div class="relative scale-105 rounded-2xl border-2  p-8 shadow-xl">
+          <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-white border px-3 py-1 rounded-2xl">Más popular</span>
+          <h3 class="font-bold text-xl">Pro</h3>
+          <p>Proyectos y tareas ilimitados</p>
+          <p class>12€/mes</p>
+          <ul class="my-6 space-y-3 text-sm">
+            <li>• 50 GB</li>
+            <li>• Time tracking</li>
+            <li>• Integraciones</li>
+          </ul>
+          <button class="w-full rounded-lg border py-2">Seleccionar plan</button>
+        </div>
+        <div class="rounded-2xl p-8 border">
+          <h3 class="font-bold text-xl text-center">Enterprise</h3>
+          <p>Todo en Pro</p>
+          <p>49€/mes</p>
+          <ul class="my-6 space-y-3 text-sm">
+            <li>• Almacenamiento ilimitado</li>
+            <li>• SSO & SAML</li>
+            <li>• Soporte 24/7 y SLA 99.9%</li>
+          </ul>
+          <button class="w-full rounded-lg border py-2">Seleccionar plan</button>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="px-6 py-24">
+    <div class="mx-auto max-w-[1280px] grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="flex flex-col gap-6 p-4">
+        <p>"Esta herramienta ha transformado la manera en que colaboramos."</p>
+        <div class="flex items-center gap-[12px]"> <img src="https://i.pravatar.cc/40?img=1" class="h-10 w-10 rounded-full" alt="Autor">
+          <div>
+            <h4 class="text-sm font-bold">Ana García</h4>
+            <span>Product Manager</span>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col gap-6 p-4">
+        <p>"Esta herramienta ha transformado la manera en que colaboramos."</p>
+        <div class="flex items-center gap-[12px]"> <img src="https://i.pravatar.cc/40?img=1" class="h-10 w-10 rounded-full" alt="Autor">
+          <div>
+            <h4 class="text-sm font-bold">Ana García</h4>
+            <span>Product Manager</span>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col gap-6 p-4">
+        <p>"Esta herramienta ha transformado la manera en que colaboramos."</p>
+        <div class="flex items-center gap-[12px]"> <img src="https://i.pravatar.cc/40?img=1" class="h-10 w-10 rounded-full" alt="Autor">
+          <div>
+            <h4 class="text-sm font-bold">Ana García</h4>
+            <span>Product Manager</span>
+          </div>
+        </div>
+      </div>
+      </div>
+  </section>
+
+  <section class="py-20 text-center text-black">
+    <h2 class="mb-4 text-3xl font-bold">¿Listo para potenciar tu productividad?</h2>
+    <p>Únete a miles de usuarios que ya están mejorando su gestión de tareas.</p>
+    <form class="mx-auto flex max-w-md gap-2 py-4">
+      <input type="email" placeholder="Tu correo" class="flex-1 rounded-lg px-4 py-2 border border-black" />
+      <button class="rounded-lg p-2 border border-black">Empezar ahora</button>
+    </form>
+  </section>
+
+  <footer class="px-6 py-12">
+    <div class="mx-auto max-w-[1280px]">
+      <div class="grid grid-cols-2 gap-8 md:grid-cols-4">
+        <div><span class="font-bold">TaskFlow</span><p class="text-sm">Gestión inteligente</p></div>
+        <div><h4 class="font-bold">Producto</h4>
+          <ul class="text-sm">
+            <li>Funciones</li>
+            <li>Precios</li>
+            <li>Integraciones</li>
+            <li>Changelog</li>
+          </ul></div>
+        <div>
+          <h4 class="font-bold">Empresa</h4>
+          <ul class="text-sm">
+            <li>Sobre nosotros</li>
+            <li>Blog</li>
+            <li>Careers</li>
+            <li>Contacto</li>
+          </ul>
+        </div>
+        <div><h4 class="font-bold">Legal</h4>
+          <ul class="text-sm">
+            <li>Privacidad</li>
+            <li>Términos</li>
+            <li>Cookies</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-12 border-t pt-8 text-center text-sm">
+        Copyright © 2026 TaskFlow. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+</body>
 </html>
